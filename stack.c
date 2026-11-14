@@ -43,12 +43,10 @@ int main(){
     scanf("%d", &x);
     struct Node *stack= createstack(x);
     printf("Enter the elements into the stack");
-    int arr[x];
+    int ele;
     for(int i=0; i<x; i++){
-        scanf("%d", &arr[i]);
-    }
-    for(int j=0; j<x; j++){
-        push(stack, arr[j]);
+        scanf("%d", &ele);
+        push(stack, ele);
     }
     int y= peek(stack);
     printf("%d", y);
